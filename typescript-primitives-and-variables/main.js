@@ -1,0 +1,16 @@
+'use strict';
+let fullName = 'Bob Ross';
+let isCool = true;
+let totalPets = 1;
+console.log('fullName: ', fullName);
+console.log('isCool: ', isCool);
+console.log('totalPets: ', totalPets);
+console.log('fullName type: ', typeof fullName);
+console.log('isCool type: ', typeof isCool);
+console.log('totalPets type: ', typeof totalPets);
+let empty = null;
+console.log('empty: ', empty);
+console.log('empty type: ', typeof empty);
+let nothing;
+console.log('nothing: ', nothing);
+console.log('nothing type: ', typeof nothing);
