@@ -6,7 +6,7 @@ console.log('area type: ', typeof area);
 
 const bill: number = 1;
 const payment: number = 2;
-const change: number = payment - bill; // no error?
+const change: number = payment - bill;
 console.log('change: ', change);
 console.log('change type: ', typeof change);
 
