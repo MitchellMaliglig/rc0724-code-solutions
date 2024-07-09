@@ -35,8 +35,8 @@ vehicle['color'] = 'rainbow';
 vehicle['isConvertible'] = true;
 console['log'](`color: ${vehicle['color']}`);
 console['log'](`isConvertible: ${vehicle['isConvertible']}`);
-console['log']('automobile: ', vehicle);
-console['log']('automobile type: ', typeof vehicle);
+console['log']('vehicle: ', vehicle);
+console['log']('vehicle type: ', typeof vehicle);
 
 interface Pet {
   name?: string;
