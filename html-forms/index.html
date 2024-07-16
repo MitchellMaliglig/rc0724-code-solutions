@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pizza Form!</h1>
+    <form>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+      <p>
+        <label for="favorite_pizza">Favorite Pizza?</label>
+        <select id="favorite_pizza" name="favorite_pizza">
+          <option value="">Please select</option>
+          <option value="Pineapple Pizza">Pineapple Pizza</option>
+          <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+          <option value="Mushroom Pizza">Mushroom Pizza</option>
+          <option value="I Love All Pizza">I Love All Pizza</option>
+        </select>
+      </p>
+      <fieldset style="width: 250px">
+        <legend>Pizza Rank?</legend>
+        <input type="radio" name="rank" value="Master" />
+        <label>Master</label>
+        <input type="radio" name="rank" value="Amateur" />
+        <label>Amateur</label>
+        <input type="radio" name="rank" value="Novice" />
+        <label>Novice</label>
+      </fieldset>
+      <p>Would you like to sign up for more information?</p>
+      <p>
+        <input type="checkbox" />
+        <label>Yes Please!</label>
+      </p>
+      <p>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </p>
+    </form>
+  </body>
+</html>
