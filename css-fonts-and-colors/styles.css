@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playwrite CU', cursive;
+}
+
+section {
+  padding: 1.5rem 0;
+  background: lightblue;
+}
+
+h2 {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+}
+
+form {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+input,
+button {
+  height: 3rem;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+}
+
+input {
+  width: 400px;
+  padding: 0.5rem;
+  border: 1px solid;
+  font-weight: 300;
+  border-color: lightgray;
+}
+
+button {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 0.25rem;
+  border: none;
+  font-weight: 500;
+  background-color: greenyellow;
+  color: white;
+}
