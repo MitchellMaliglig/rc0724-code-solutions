@@ -1,0 +1,227 @@
+body {
+  font-family: Avenir, sans-serif;
+  color: rgb(110, 110, 110);
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+p,
+address {
+  line-height: 1.7rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(231, 233, 236);
+}
+
+footer {
+  background-color: rgb(81, 82, 80);
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-quarter {
+  flex-basis: 25%;
+}
+
+.column-three-quarter {
+  flex-basis: 75%;
+}
+
+.column-full,
+.column-half,
+.column-quarter,
+.column-three-quarter {
+  padding: 0 15px;
+}
+
+.justify-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-logo {
+  height: 1.75rem;
+}
+
+.nav-brand,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: rgb(160, 160, 160);
+}
+
+.overview {
+  padding: 4.25rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(85%) contrast(75%) saturate(95%);
+}
+
+.hero-content {
+  padding: 4.75rem;
+  position: relative;
+  color: white;
+}
+
+.hero-content p {
+  margin-bottom: 2rem;
+}
+
+button.action {
+  height: 3.5rem;
+  padding: 0 3rem;
+  border: none;
+  border-radius: 4px;
+  font-family: Avenir, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+  color: white;
+  background-color: rgb(41, 68, 100);
+}
+
+.clinicians {
+  padding: 4rem 0 5rem;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.clinicians p {
+  margin-bottom: 5.5rem;
+}
+
+.clinician-list {
+  font-size: 1.25rem;
+}
+
+.clinician-list > li {
+  margin-bottom: 2rem;
+}
+
+.call-to-action {
+  padding: 3rem 0 1.5rem;
+  border-top: 1px solid rgb(231, 233, 236);
+}
+
+.call-to-action h2 {
+  margin-bottom: 0;
+}
+
+.footer-top {
+  padding: 7.25rem 0 6.75rem;
+  color: white;
+  background-color: rgb(82, 83, 81);
+}
+
+.footer-logo {
+  height: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.footer-top li {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.site-links,
+.product-links,
+.bottom-links {
+  font-size: 1.15rem;
+}
+
+.footer-bottom {
+  padding: 3.5rem 0;
+  background-color: rgb(250, 250, 250);
+}
+
+.bottom-links {
+  display: flex;
+  font-weight: 600;
+}
+
+.bottom-links > li:not(:first-child) {
+  margin-left: 2.5rem;
+}
+
+.nav-links > li:not(:first-child) {
+  padding-left: 1.75rem;
+}
+
+.nav-links > li:not(:last-child) {
+  padding-right: 1.75rem;
+}
+
+.nav-links > li.action {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(41, 68, 100);
+}
