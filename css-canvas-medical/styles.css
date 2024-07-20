@@ -73,6 +73,11 @@
   background-color: grey;
 }
 
+.footer-top,
+.clinicians {
+  padding: 3rem 0;
+}
+
 .footer-logo {
   width: 25%;
 }
