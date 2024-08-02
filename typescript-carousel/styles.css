@@ -1,0 +1,50 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+img {
+  width: 100%;
+}
+
+.vertical-center {
+  align-self: center;
+}
+
+.horizontal-center {
+  justify-self: center;
+}
+
+.fa-arrow-left {
+  float: right;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+.fa-circle {
+  margin: 0 1.9rem;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
