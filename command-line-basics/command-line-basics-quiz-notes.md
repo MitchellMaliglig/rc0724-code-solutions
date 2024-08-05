@@ -43,6 +43,7 @@ Answer the following questions in the provided markdown file before turning in t
     you want to copy something
 
 - What are the three virtues of a great programmer?
+  lazy, impatient, and hubris
 
 ## Notes
 
