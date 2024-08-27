@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-import {
-  Indicators,
-  NextButton,
-  PreviousButton,
-  Banner,
-} from './RotatingBanner';
+import { Banner } from './Banner';
+import { PreviousButton } from './PreviousButton';
+import { NextButton } from './NextButton';
+import { Indicators } from './Indicators';
 
 const items = [
   'Aardvark',
