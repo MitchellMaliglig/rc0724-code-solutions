@@ -1,0 +1,111 @@
+#background,
+#ring-space,
+#watch {
+  background-color: white;
+}
+
+#button-ring,
+#container {
+  background-color: black;
+}
+
+#timer,
+#pause,
+#play {
+  color: black;
+}
+
+#background {
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+}
+
+#button-ring {
+  width: 3.25rem;
+  height: 3.25rem;
+  top: 3.5rem;
+}
+
+#ring-space {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 3.9rem;
+}
+
+#button-top {
+  background-color: lightgrey;
+  width: 1.75rem;
+  height: 1.25rem;
+  top: 4.3rem;
+}
+
+#button-bottom {
+  background-color: grey;
+  width: 1.25rem;
+  height: 1.5rem;
+  top: 5.55rem;
+}
+
+#container {
+  width: 11rem;
+  height: 11rem;
+}
+
+#watch {
+  width: 10rem;
+  height: 10rem;
+}
+
+#timer > span {
+  font-size: 2rem;
+}
+
+#container,
+#watch,
+#button-ring,
+#ring-space {
+  border-radius: 50%;
+}
+
+#pause,
+#play {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+#timer {
+  text-align: center;
+}
+
+#pause:hover,
+#play:hover,
+#button-top,
+#button-bottom {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#button-ring,
+#ring-space,
+#button-top,
+#button-bottom {
+  position: absolute;
+}
+
+#background,
+#watch {
+  flex-direction: column;
+}
+
+#background,
+#container,
+#watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
