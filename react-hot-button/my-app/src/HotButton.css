@@ -1,0 +1,26 @@
+.stage-one {
+  background-color: darkblue;
+}
+
+.stage-two {
+  background-color: blueviolet;
+}
+
+.stage-three {
+  background-color: lightcoral;
+}
+
+.stage-four {
+  color: black;
+  background-color: orange;
+}
+
+.stage-five {
+  color: black;
+  background-color: yellow;
+}
+
+.stage-final {
+  color: black;
+  background-color: white;
+}
