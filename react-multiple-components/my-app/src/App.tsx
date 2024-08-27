@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import {
   Indicators,
@@ -16,17 +17,27 @@ const items = [
 ];
 
 function App() {
+  const [index, setIndex] = useState(0);
+
+  function increment() {
+    setIndex((index + 1) % items.length);
+  }
+
+  function decrement() {
+    setIndex((index - 1 + items.length) % items.length);
+  }
+
   return (
     <>
       <div id="container">
-        <Banner item={items[0]}></Banner>
-        <PreviousButton></PreviousButton>
+        <Banner item={items[index]}></Banner>
+        <PreviousButton onPrevious={decrement}></PreviousButton>
       </div>
       <div id="indicators">
-        <Indicators count={items.length}></Indicators>
+        <Indicators count={items.length} highlightedIndex={index}></Indicators>
       </div>
       <div id="container">
-        <NextButton></NextButton>
+        <NextButton onNext={increment}></NextButton>
       </div>
     </>
   );

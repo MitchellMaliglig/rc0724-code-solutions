@@ -8,26 +8,49 @@ export function Banner({ item }: BannerProps) {
   return <h2 id="banner">{item}</h2>;
 }
 
-export function NextButton() {
-  return <button id="next">Next</button>;
+type nextButtonProps = {
+  onNext: () => void;
+};
+
+export function NextButton({ onNext }: nextButtonProps) {
+  return (
+    <button id="next" onClick={onNext}>
+      Next
+    </button>
+  );
 }
 
-export function PreviousButton() {
-  return <button id="previous">Previous</button>;
+type previousButtonProps = {
+  onPrevious: () => void;
+};
+
+export function PreviousButton({ onPrevious }: previousButtonProps) {
+  return (
+    <button id="previous" onClick={onPrevious}>
+      Previous
+    </button>
+  );
 }
 
 type indicatorsProps = {
   count: number;
+  highlightedIndex: number;
 };
 
-export function Indicators({ count }: indicatorsProps) {
+export function Indicators({ count, highlightedIndex }: indicatorsProps) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
-    buttons.push(
-      <button key={i} className="indicator">
-        {i}
-      </button>
-    );
+    i === highlightedIndex
+      ? buttons.push(
+          <button key={i} className="indicator highlighted">
+            {i}
+          </button>
+        )
+      : buttons.push(
+          <button key={i} className="indicator">
+            {i}
+          </button>
+        );
   }
   return buttons;
 }
