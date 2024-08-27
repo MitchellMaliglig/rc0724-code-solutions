@@ -1,0 +1,37 @@
+#toggle-switch {
+  border-radius: 50%;
+  width: 10rem;
+  height: 5rem;
+}
+
+#toggle-switch.on {
+  background-color: grey;
+}
+
+#toggle-switch.off {
+  background-color: white;
+}
+
+#slider {
+  background-color: black;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+#slider.on,
+#slider-inside.on {
+  float: left;
+}
+
+#slider.off,
+#slider-inside.off {
+  float: right;
+}
+
+#slider-inside {
+  background-color: yellowgreen;
+  border-radius: 50%;
+  height: 3rem;
+  width: 2rem;
+}
