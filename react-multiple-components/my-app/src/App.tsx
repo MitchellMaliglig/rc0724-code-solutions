@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import {
   Indicators,
@@ -19,25 +19,33 @@ const items = [
 function App() {
   const [index, setIndex] = useState(0);
 
-  function increment() {
+  function handleNext() {
     setIndex((index + 1) % items.length);
   }
 
-  function decrement() {
+  function handlePrevious() {
     setIndex((index - 1 + items.length) % items.length);
+  }
+
+  function handleClickIndicator(e: React.MouseEvent) {
+    const target = e.target as HTMLButtonElement;
+    setIndex(Number(target.textContent));
   }
 
   return (
     <>
       <div id="container">
         <Banner item={items[index]}></Banner>
-        <PreviousButton onPrevious={decrement}></PreviousButton>
+        <PreviousButton onPrevious={handlePrevious}></PreviousButton>
       </div>
       <div id="indicators">
-        <Indicators count={items.length} highlightedIndex={index}></Indicators>
+        <Indicators
+          count={items.length}
+          highlightedIndex={index}
+          onClickIndicator={handleClickIndicator}></Indicators>
       </div>
       <div id="container">
-        <NextButton onNext={increment}></NextButton>
+        <NextButton onNext={handleNext}></NextButton>
       </div>
     </>
   );
