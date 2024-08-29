@@ -1,0 +1,32 @@
+#root {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.topic {
+  background-color: grey;
+}
+
+.content {
+  background-color: white;
+  color: black;
+}
+
+.topic,
+.content {
+  border: solid 0.25rem black;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.topic:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
