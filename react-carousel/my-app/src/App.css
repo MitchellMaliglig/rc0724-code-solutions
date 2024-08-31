@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  height: 90%;
+  padding: 1rem;
+}
+
+.holder {
+  width: 20rem;
+  height: 25rem;
+}
+
+svg {
+  font-size: 5rem;
+  margin: 0 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.top,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover,
+li > svg:hover {
+  cursor: pointer;
+}
