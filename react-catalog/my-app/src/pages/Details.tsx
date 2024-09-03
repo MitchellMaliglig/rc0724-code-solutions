@@ -50,11 +50,13 @@ export function Details() {
         </div>
       </div>
       <p>{product?.longDescription}</p>
-      <button
-        type="button"
-        onClick={() => alert(`Added ${product?.name} to cart`)}>
-        Add to Cart
-      </button>
+      <Link to="/">
+        <button
+          type="button"
+          onClick={() => alert(`Added ${product?.name} to cart`)}>
+          Add to Cart
+        </button>
+      </Link>
     </>
   );
 }
