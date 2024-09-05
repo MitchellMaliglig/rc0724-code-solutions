@@ -23,8 +23,7 @@ Answer the following questions in the provided markdown file before turning in t
   To avoid ruining everything
 
 - How do you accidentally delete or update all rows in a table?
-
-  -
+  Oops I forgot the condition lol
 
 - How do you get back the modified row without a separate `select` statement?
   RETURNING \*
