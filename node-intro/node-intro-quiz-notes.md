@@ -16,6 +16,7 @@ Answer the following questions in the provided markdown file before turning in t
   they can be accessed in Node.js with process.env
 
 - What is a REPL?
+  read eval print loop- a simple interactive programming environment
 
 ## Notes
 
