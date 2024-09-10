@@ -32,7 +32,7 @@ app.get('/api/films/:filmId', async (req, res, next) => {
     const { filmId } = req.params;
     if (!filmId) {
       throw new ClientError(400, 'filmId undefined');
-    } else if (Number.isInteger(+filmId)) {
+    } else if (!Number.isInteger(+filmId)) {
       throw new ClientError(400, 'non-integer filmId');
     }
     const sql = `
