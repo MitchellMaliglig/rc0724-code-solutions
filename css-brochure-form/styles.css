@@ -1,0 +1,45 @@
+input,
+label,
+button {
+  display: block;
+}
+
+input,
+select {
+  margin: 0 100px;
+  width: 500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+label {
+  margin: 0 110px;
+}
+
+form label,
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: salmon;
+  margin: 5px 275px;
+}
+
+select {
+  background-color: lightgray;
+}
+
+button {
+  background-color: salmon;
+  color: white;
+  border: salmon;
+  margin: 10px 550px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
